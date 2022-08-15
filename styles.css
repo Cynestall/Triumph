@@ -1,0 +1,57 @@
+:root {
+    --dark-bg: #282828;
+    --font-black: #1d1d1b;
+    --font-white: #FFFFFF;
+  }
+@font-face {
+    font-family: "Bebas";
+    src: url('./fonts/Bebas-Regular.otf');
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+header a {
+    font-family: "Bebas";
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--font-black);
+    padding: 0 1rem;
+    letter-spacing: 0.02em;
+}
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .logo img {
+    height: 3rem;
+}
+header .logo a {
+    padding-left: 0.5rem;
+}
+.main-commercial {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 0;
+    background: #282828;
+}
+.main-commercial > h1 {
+    font-size: 7rem;
+    text-align: center;
+    width: 50%;
+    color: var(--font-white);
+    font-family: "Bebas";
+    letter-spacing: 0.03em;
+}
+.main-commercial > .commercial-product {
+    width: 50%;
+}
