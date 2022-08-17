@@ -1,7 +1,9 @@
 :root {
     --dark-bg: #282828;
+    --dark-bg-hover: #4d4d4d;
     --font-black: #1d1d1b;
     --font-white: #FFFFFF;
+    --font-gray: #7f7f7f;
     --gradient: linear-gradient(180deg, #FFC165 -20%, rgba(255, 15, 0, 1) 150%);
 
 }
@@ -13,7 +15,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
+h1, h2, h3 {
+    font-family: 'Bebas' !important;
+    color: var(--font-black);
+}
 .navbar-nav a h2 {
     font-family: 'Bebas' !important;
     letter-spacing: 0.1rem;
@@ -29,13 +34,49 @@ body {
 }
 .slogan-bg {
     background-color: black;
-    background-image: url('public/Background Texture.png');
+    background-image: url('public/Background Commercial Render.png');
     background-position: center;
     background-size: cover;
 }
+.spacer-commercial {
+    background: white;
+    width: 100%;
+    height: 3rem;
+}
+.pre-series h1 {
+    margin-bottom: 0;
+}
+.pre-series h3 {
+    color: var(--font-gray) !important;
+}
+.button-pre-series {
+    font-family: 'Bebas';
+    text-decoration: none;
+    color: white;
+    background: var(--dark-bg);
+    padding: 10px 30px;
+    margin-top: 3rem;
+    font-size: 24px;
+}
+.button-pre-series:hover {
+    cursor: pointer;
+    color: white;
+    background: var(--dark-bg-hover);
+}
+
+.column-hover:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
 
 @media (max-width: 1199.98px) {
     .slogan-h1 {
         font-size: 10vw !important;
+    }
+}
+@media (min-width: 1920px) {
+    .slogan-img {
+        height: auto !important;
+        width: 50vw !important;
     }
 }
