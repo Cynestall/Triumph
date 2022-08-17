@@ -2,7 +2,9 @@
     --dark-bg: #282828;
     --font-black: #1d1d1b;
     --font-white: #FFFFFF;
-  }
+    --gradient: linear-gradient(180deg, #FFC165 -20%, rgba(255, 15, 0, 1) 150%);
+
+}
 @font-face {
     font-family: 'Bebas';
     src: url('./fonts/Bebas-Regular.otf');
@@ -19,4 +21,21 @@ body {
 }
 .navbar-nav .spacer {
     width: 10px;
+}
+.slogan-h1 {
+    font-size: 8vw !important;
+    letter-spacing: 0.6rem;
+    font-family: 'Bebas' !important;
+}
+.slogan-bg {
+    background-color: black;
+    background-image: url('public/Background Texture.png');
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1199.98px) {
+    .slogan-h1 {
+        font-size: 10vw !important;
+    }
 }
